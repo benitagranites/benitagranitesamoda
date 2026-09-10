@@ -1,0 +1,210 @@
+@import "tailwindcss";
+
+/* ============================================
+   BENITA GRANITES — DESIGN SYSTEM
+   Premium Mine Management MIS
+   ============================================ */
+
+@theme {
+  /* ---- Primary Palette ---- */
+  --color-navy: #0F2747;
+  --color-navy-50: #E8EDF4;
+  --color-navy-100: #C5D1E3;
+  --color-navy-200: #9DB3D0;
+  --color-navy-300: #7595BD;
+  --color-navy-400: #5680AF;
+  --color-navy-500: #3A6B9F;
+  --color-navy-600: #2D5A8A;
+  --color-navy-700: #1F4570;
+  --color-navy-800: #153358;
+  --color-navy-900: #0F2747;
+
+  --color-slate-blue: #334E68;
+  --color-slate-blue-50: #EEF1F5;
+  --color-slate-blue-100: #D3DBE5;
+  --color-slate-blue-200: #B5C2D3;
+  --color-slate-blue-300: #97A9C1;
+  --color-slate-blue-400: #8096B3;
+  --color-slate-blue-500: #6B84A5;
+  --color-slate-blue-600: #5C7393;
+  --color-slate-blue-700: #4A607D;
+  --color-slate-blue-800: #334E68;
+  --color-slate-blue-900: #243A50;
+
+  --color-teal: #0F766E;
+  --color-teal-50: #E6F5F4;
+  --color-teal-100: #C0E6E3;
+  --color-teal-200: #96D6D1;
+  --color-teal-300: #6BC6BF;
+  --color-teal-400: #4BBAB1;
+  --color-teal-500: #2BADA3;
+  --color-teal-600: #229E94;
+  --color-teal-700: #178B81;
+  --color-teal-800: #0F766E;
+  --color-teal-900: #005B53;
+
+  /* ---- Backgrounds & Surfaces ---- */
+  --color-bg: #F5F7FA;
+  --color-surface: #FFFFFF;
+  --color-surface-hover: #F8FAFC;
+
+  /* ---- Text ---- */
+  --color-text-primary: #17202A;
+  --color-text-secondary: #64748B;
+  --color-text-tertiary: #94A3B8;
+  --color-text-inverse: #FFFFFF;
+
+  /* ---- Borders ---- */
+  --color-border: #E2E8F0;
+  --color-border-hover: #CBD5E1;
+  --color-border-focus: #0F766E;
+
+  /* ---- Status Colors ---- */
+  --color-success: #15803D;
+  --color-success-bg: #F0FDF4;
+  --color-success-border: #BBF7D0;
+  --color-warning: #D97706;
+  --color-warning-bg: #FFFBEB;
+  --color-warning-border: #FDE68A;
+  --color-critical: #DC2626;
+  --color-critical-bg: #FEF2F2;
+  --color-critical-border: #FECACA;
+  --color-info: #2563EB;
+  --color-info-bg: #EFF6FF;
+  --color-info-border: #BFDBFE;
+
+  /* ---- Typography ---- */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-tertiary);
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-teal) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   LOADING SKELETON
+   ============================================ */
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--color-border) 25%,
+    var(--color-bg) 50%,
+    var(--color-border) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+  border-radius: 8px;
+}
+
+/* ============================================
+   FORM INPUTS
+   ============================================ */
+
+input, select, textarea {
+  font-family: var(--font-sans);
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+}
+
+/* ============================================
+   TOAST OVERRIDES
+   ============================================ */
+
+.toast-custom {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* ============================================
+   SAFE AREA (mobile)
+   ============================================ */
+
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* ============================================
+   SCROLLBAR HIDE
+   ============================================ */
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
