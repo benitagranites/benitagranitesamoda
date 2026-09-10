@@ -4,13 +4,13 @@ import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 import { getFirestore, serverTimestamp } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "dummy_api_key",
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "dummy_auth_domain",
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "dummy_project_id",
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "dummy_bucket",
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "dummy_sender_id",
-  appId: import.meta.env.VITE_FIREBASE_APP_ID || "dummy_app_id",
-  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID || "dummy_measurement_id"
+  apiKey: "AIzaSyA370TyNEZtgjx9Jk530Ghwugg_9qhcJGs",
+  authDomain: "benitagranites.firebaseapp.com",
+  projectId: "benitagranites",
+  storageBucket: "benitagranites.firebasestorage.app",
+  messagingSenderId: "109007515713",
+  appId: "1:109007515713:web:862fd4384cd09c088a56c0",
+  measurementId: "G-K3SE55671G"
 };
 
 // Initialize Firebase
