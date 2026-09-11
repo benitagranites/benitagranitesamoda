@@ -53,7 +53,7 @@ export default function DailyLabourFormPage() {
         ...data,
         date: Timestamp.fromDate(new Date(data.date)),
         amount,
-        approvalStatus: 'pending',
+        approvalStatus: 'submitted',
         createdBy: user.uid,
       });
       toast.success('Daily labour entry saved');

@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Plus, Search, Loader2, Fuel, TrendingDown, Gauge } from 'lucide-react';
-import { cn, formatINR } from '@/lib/utils';
+import { formatINR } from '@/lib/utils';
 import { useAuthStore } from '@/stores/authStore';
 import { useFuelStore } from '@/stores/fuelStore';
 import { useEquipmentStore } from '@/stores/equipmentStore';

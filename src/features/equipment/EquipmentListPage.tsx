@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Plus, Search, Loader2, Truck, Filter, Shield } from 'lucide-react';
+import { Plus, Search, Loader2, Truck, Shield } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useAuthStore } from '@/stores/authStore';
 import { useEquipmentStore } from '@/stores/equipmentStore';

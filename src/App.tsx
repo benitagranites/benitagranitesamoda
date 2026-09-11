@@ -33,8 +33,7 @@ import KitchenDailyFormPage from '@/features/kitchen/KitchenDailyFormPage';
 import KitchenStaffPage from '@/features/kitchen/KitchenStaffPage';
 import ModulePage from '@/components/ui/ModulePage';
 import {
-  Mountain, Scissors, Package, Truck, Fuel, Zap, Tractor,
-  Users, ChefHat, Receipt, FileText, Activity, Shield, Link as LinkIcon, CreditCard, BarChart3, Settings,
+  Package, Shield, Link as CreditCard, BarChart3, Settings,
 } from 'lucide-react';
 
 function App() {

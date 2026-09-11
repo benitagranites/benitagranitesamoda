@@ -1,7 +1,7 @@
 // Benita Granites — Management Dashboard
 import { motion } from 'framer-motion';
 import {
-  Mountain, Package, Fuel, Users, ChefHat, Receipt, CreditCard,
+  Mountain, Fuel, Users, ChefHat, Receipt, CreditCard,
   TrendingUp, TrendingDown, AlertTriangle, ArrowRight, Calendar,
   BarChart3, Shield, Truck, Activity,
 } from 'lucide-react';
@@ -69,7 +69,7 @@ const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.4, ease: [0.4, 0, 0.2, 1] },
+    transition: { duration: 0.4 },
   },
 };
 
@@ -320,7 +320,7 @@ export default function DashboardPage() {
                   tickFormatter={(v) => `₹${(v / 100000).toFixed(0)}L`}
                 />
                 <Tooltip
-                  formatter={(value: number) => [formatINR(value), 'Expense']}
+                  formatter={(value: any) => [formatINR(value), 'Expense']}
                   contentStyle={{
                     background: '#fff',
                     border: '1px solid #E2E8F0',
@@ -372,7 +372,7 @@ export default function DashboardPage() {
                     ))}
                   </Pie>
                   <Tooltip
-                    formatter={(value: number) => [formatINR(value), '']}
+                    formatter={(value: any) => [formatINR(value), '']}
                     contentStyle={{
                       background: '#fff',
                       border: '1px solid #E2E8F0',

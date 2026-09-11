@@ -7,7 +7,7 @@ import {
   MapPin, Ruler, Calendar, Tag, Layers, Star,
   ChevronLeft, ChevronRight,
 } from 'lucide-react';
-import { cn, getStatusColor } from '@/lib/utils';
+import { cn } from '@/lib/utils';
 import { useBlockStore } from '@/stores/blockStore';
 import {
   BLOCK_CATEGORY_LABELS, BLOCK_STATUS_LABELS,

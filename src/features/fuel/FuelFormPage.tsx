@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Loader2, Save, Calculator, Truck } from 'lucide-react';
+import { ArrowLeft, Loader2, Save, Truck } from 'lucide-react';
 import { useAuthStore } from '@/stores/authStore';
 import { useFuelStore } from '@/stores/fuelStore';
 import { useEquipmentStore } from '@/stores/equipmentStore';

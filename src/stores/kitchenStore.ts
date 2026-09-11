@@ -1,8 +1,8 @@
 // Benita Granites — Kitchen Store (Zustand)
 import { create } from 'zustand';
 import {
-  collection, addDoc, updateDoc, deleteDoc, doc,
-  query, where, serverTimestamp, getDoc, onSnapshot,
+  collection, addDoc, updateDoc, doc,
+  query, where, serverTimestamp, onSnapshot,
   type Unsubscribe,
 } from 'firebase/firestore';
 import { db } from '@/firebase/config';

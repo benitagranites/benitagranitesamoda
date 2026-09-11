@@ -22,7 +22,7 @@ const purchaseSchema = z.object({
   unit: z.string().min(1, 'Unit required (e.g. kg, L, nos)'),
   rate: z.coerce.number().min(0, 'Rate required'),
   gst: z.coerce.number().min(0, 'GST % required'),
-  paymentMode: z.enum(['cash', 'bank', 'upi']),
+  paymentMode: z.enum(['cash', 'bank_transfer', 'upi']),
   paymentStatus: z.enum(['pending', 'paid']),
 });
 
@@ -48,7 +48,7 @@ export default function PurchaseFormPage() {
       unit: 'nos',
       rate: 0,
       gst: 0,
-      paymentMode: 'bank',
+      paymentMode: 'bank_transfer',
       paymentStatus: 'pending',
     },
   });
@@ -93,7 +93,7 @@ export default function PurchaseFormPage() {
         date: Timestamp.fromDate(new Date(data.date)),
         total: totalAmount,
         billPhoto,
-        approvalStatus: 'pending',
+        approvalStatus: 'submitted',
         createdBy: user.uid,
       });
 

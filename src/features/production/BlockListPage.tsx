@@ -4,14 +4,14 @@ import { Link, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Plus, Search, Filter, Mountain, Eye, Pencil, Trash2,
-  ChevronDown, X, Loader2, Package, AlertTriangle,
+  X, Loader2, Package, AlertTriangle,
 } from 'lucide-react';
 import { cn, getStatusColor } from '@/lib/utils';
 import { useAuthStore } from '@/stores/authStore';
 import { useBlockStore } from '@/stores/blockStore';
 import {
-  BLOCK_CATEGORIES, BLOCK_CATEGORY_LABELS,
-  BLOCK_STATUS, BLOCK_STATUS_LABELS,
+  BLOCK_CATEGORY_LABELS,
+  BLOCK_STATUS_LABELS,
 } from '@/constants';
 import type { BlockCategory, BlockStatus } from '@/constants';
 import type { Block } from '@/types';

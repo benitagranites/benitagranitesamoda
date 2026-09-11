@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Plus, Search, Loader2, Zap, TrendingDown, Clock, Download } from 'lucide-react';
-import { cn, formatINR } from '@/lib/utils';
+import { formatINR } from '@/lib/utils';
 import { useAuthStore } from '@/stores/authStore';
 import { useGeneratorStore } from '@/stores/generatorStore';
 

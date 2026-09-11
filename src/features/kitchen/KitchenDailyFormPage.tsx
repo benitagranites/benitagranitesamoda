@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Loader2, Save, ChefHat } from 'lucide-react';
+import { ArrowLeft, Loader2, Save } from 'lucide-react';
 import { useAuthStore } from '@/stores/authStore';
 import { useKitchenStore } from '@/stores/kitchenStore';
 import { Timestamp } from 'firebase/firestore';

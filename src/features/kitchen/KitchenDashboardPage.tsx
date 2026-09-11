@@ -1,9 +1,9 @@
 // Benita Granites — Kitchen Dashboard
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Plus, Loader2, ChefHat, Coffee, ShoppingBag, DollarSign, Users } from 'lucide-react';
-import { cn, formatINR } from '@/lib/utils';
+import { Plus, Loader2, ChefHat, Coffee, ShoppingBag, Users } from 'lucide-react';
+import { formatINR } from '@/lib/utils';
 import { useAuthStore } from '@/stores/authStore';
 import { useKitchenStore } from '@/stores/kitchenStore';
 import { usePurchaseStore } from '@/stores/purchaseStore';

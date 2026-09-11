@@ -11,7 +11,7 @@ import { useDressingStore } from '@/stores/dressingStore';
 import { useBlockStore } from '@/stores/blockStore';
 import { useAuthStore } from '@/stores/authStore';
 import { BLOCK_CATEGORY_LABELS, BLOCK_STATUS, BLOCK_STATUS_LABELS } from '@/constants';
-import type { DressingRecord, Block } from '@/types';
+import type { DressingRecord } from '@/types';
 import type { BlockStatus } from '@/constants';
 import toast from 'react-hot-toast';
 

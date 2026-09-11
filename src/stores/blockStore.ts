@@ -2,7 +2,7 @@
 import { create } from 'zustand';
 import {
   collection, addDoc, updateDoc, deleteDoc, doc, getDocs,
-  query, orderBy, where, serverTimestamp, getDoc,
+  query, where, serverTimestamp, getDoc,
   onSnapshot, type Unsubscribe,
 } from 'firebase/firestore';
 import { db } from '@/firebase/config';

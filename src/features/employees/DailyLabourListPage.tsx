@@ -1,14 +1,14 @@
 // Benita Granites — Daily Labour List Page
 import { useEffect, useMemo, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Plus, Search, Loader2, Users, Calendar, BarChart3 } from 'lucide-react';
-import { cn, formatINR } from '@/lib/utils';
+import { formatINR } from '@/lib/utils';
 import { useAuthStore } from '@/stores/authStore';
 import { useEmployeeStore } from '@/stores/employeeStore';
 
 export default function DailyLabourListPage() {
-  const navigate = useNavigate();
+  
   const { user } = useAuthStore();
   const { dailyLabour, loading, subscribe, cleanup } = useEmployeeStore();
   const [search, setSearch] = useState('');

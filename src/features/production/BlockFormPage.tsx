@@ -13,8 +13,8 @@ import { useAuthStore } from '@/stores/authStore';
 import { useBlockStore } from '@/stores/blockStore';
 import { uploadToCloudinary } from '@/cloudinary/upload';
 import {
-  BLOCK_CATEGORIES, BLOCK_CATEGORY_LABELS,
-  BLOCK_STATUS, BLOCK_STATUS_LABELS,
+  BLOCK_CATEGORY_LABELS,
+  BLOCK_STATUS_LABELS,
 } from '@/constants';
 import type { BlockCategory, BlockStatus } from '@/constants';
 import { Timestamp } from 'firebase/firestore';

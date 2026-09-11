@@ -3,8 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import {
   LayoutDashboard, Mountain, Scissors, Package, Truck, Fuel, Zap, Tractor,
   Users, ChefHat, Receipt, Shield, CreditCard, BarChart3, Settings,
-  X, LogOut,
-} from 'lucide-react';
+  X, } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useUIStore } from '@/stores/uiStore';
 import { useAuthStore } from '@/stores/authStore';

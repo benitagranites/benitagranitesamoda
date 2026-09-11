@@ -4,13 +4,12 @@ import { Link, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Plus, Search, Loader2, Scissors, Eye, Pencil, Trash2,
-  X, AlertTriangle, Filter, Clock, CheckCircle2, XCircle,
-} from 'lucide-react';
+  X, AlertTriangle, } from 'lucide-react';
 import { cn, formatINR } from '@/lib/utils';
 import { useAuthStore } from '@/stores/authStore';
 import { useDressingStore } from '@/stores/dressingStore';
 import { useBlockStore } from '@/stores/blockStore';
-import { BLOCK_STATUS_LABELS, BLOCK_CATEGORY_LABELS } from '@/constants';
+import { BLOCK_CATEGORY_LABELS } from '@/constants';
 import type { DressingRecord, Block } from '@/types';
 import toast from 'react-hot-toast';
 
@@ -312,7 +311,7 @@ interface DressingCardProps {
 
 function DressingCard({ record, block, onView, onEdit, onDelete }: DressingCardProps) {
   const startDate = record.startDate?.toDate?.();
-  const completionDate = record.completionDate?.toDate?.();
+  
 
   // Block status pipeline position
   const blockStatus = block?.status || 'dug';
